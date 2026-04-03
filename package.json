@@ -1,0 +1,67 @@
+{
+  "name": "schema-lens",
+  "displayName": "Schema Lens",
+  "description": "Parse SQL migration files and render interactive ERD diagrams in a side panel",
+  "version": "0.1.0",
+  "publisher": "schema-lens",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Visualization",
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:schema-lens.openERD",
+    "onCommand:schema-lens.compareWith",
+    "onLanguage:sql",
+    "onLanguage:prisma"
+  ],
+  "icon": "images/icon.png",
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "schema-lens.openERD",
+        "title": "Schema Lens: Open ERD",
+        "icon": {
+          "dark": "images/icon-dark.svg",
+          "light": "images/icon-light.svg"
+        }
+      },
+      {
+        "command": "schema-lens.compareWith",
+        "title": "Schema Lens: Compare With…"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "when": "resourceExtname == .sql || resourceFilename =~ /schema\\.prisma/",
+          "command": "schema-lens.openERD",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.5.0",
+    "@types/vscode": "^1.80.0",
+    "@vscode/vsce": "^2.22.0",
+    "jest": "^30.3.0",
+    "ts-jest": "^29.4.9",
+    "vitest": "^4.1.2"
+  },
+  "dependencies": {
+    "node-sql-parser": "^4.12.0",
+    "typescript": "^5.3.0"
+  }
+}
