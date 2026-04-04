@@ -106,4 +106,4 @@ Schema Lens parses your SQL migrations, Prisma schemas, Drizzle schemas, and Kne
 
   ## License
 Schema Lens is licensed under the [GNU Affero General Public License v3.0](LICENSE).
-Copyright (C) 2026 [Your Name]
+Copyright (C) 2026 Sangeeth Promod
