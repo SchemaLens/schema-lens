@@ -13,7 +13,7 @@
     "resolveJsonModule": true,
     "declaration": true,
     "declarationMap": true,
-    "types": ["node"]
+    "types": ["node", "vscode"]
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "out"]

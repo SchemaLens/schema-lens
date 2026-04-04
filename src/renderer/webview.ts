@@ -7,17 +7,20 @@ export function buildWebviewHtml(
   webview: vscode.Webview
 ): string {
   const isDark = vscode.window.activeColorTheme.kind !== vscode.ColorThemeKind.Light;
-  const schemaJson = JSON.stringify(schema);
+  const nonce = getNonce();
+  const schemaJson = JSON.stringify(schema)
+    .replace(/</g, '\\u003c')
+    .replace(/>/g, '\\u003e')
+    .replace(/&/g, '\\u0026')
+    .replace(/'/g, '\\u0027');
 
   return /* html */ `<!DOCTYPE html>
 <html lang="en" data-theme="${isDark ? 'dark' : 'light'}">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com; font-src https://fonts.gstatic.com; script-src 'unsafe-inline';">
-<title>ERD — ${filename}</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline' ${webview.cspSource}; font-src ${webview.cspSource}; script-src 'nonce-${nonce}';">
+<title>ERD — ${escapeHtml(filename)}</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
@@ -628,7 +631,7 @@ html, body {
 <!-- Tooltip -->
 <div class="tooltip" id="tooltip"></div>
 
-<script>
+<script nonce="${nonce}">
 // ──────────────────────────────────────────────────
 // Data
 // ──────────────────────────────────────────────────
@@ -1104,4 +1107,13 @@ function escapeHtml(str: string): string {
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
+}
+
+function getNonce(): string {
+  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let nonce = '';
+  for (let i = 0; i < 32; i++) {
+    nonce += chars.charAt(Math.floor(Math.random() * chars.length));
+  }
+  return nonce;
 }

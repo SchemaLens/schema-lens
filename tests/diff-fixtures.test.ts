@@ -3,7 +3,7 @@ import * as path from 'node:path';
 import { parseFile } from '../src/parsers';
 import { diffSchemas } from '../src/diff';
 
-const fixturesDir = path.resolve(__dirname, '../test');
+const fixturesDir = path.resolve(__dirname, '../test_sqls');
 
 function parseFixture(fileName: string) {
   const fullPath = path.join(fixturesDir, fileName);

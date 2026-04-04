@@ -79,8 +79,8 @@ Schema Lens parses your SQL migrations, Prisma schemas, Drizzle schemas, and Kne
 
 ## Limitations and Edge Cases
 
-- **Internet on first use**  
-  Mermaid is loaded from a CDN the first time the ERD panel is opened. You can later bundle it locally if needed. [web:143]
+- **Offline-friendly**  
+  The ERD webview does not require external network requests.
 
 - **SQL dialect coverage**  
   The SQL parser targets common PostgreSQL and MySQL syntax. Vendor-specific features such as SQL Server `IDENTITY` may fail to parse cleanly.
@@ -102,3 +102,8 @@ Schema Lens parses your SQL migrations, Prisma schemas, Drizzle schemas, and Kne
 
 - **Inline SQL comments**  
   Complex block comments (`/* ... */`) inside `CREATE TABLE` definitions can confuse the SQL parser in some cases.
+
+
+  ## License
+Schema Lens is licensed under the [GNU Affero General Public License v3.0](LICENSE).
+Copyright (C) 2026 [Your Name]

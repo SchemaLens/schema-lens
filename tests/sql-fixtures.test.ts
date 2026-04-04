@@ -2,7 +2,7 @@ import * as fs from 'node:fs';
 import * as path from 'node:path';
 import { parseFile } from '../src/parsers';
 
-const fixturesDir = path.resolve(__dirname, '../test');
+const fixturesDir = path.resolve(__dirname, '../test_sqls');
 const emptyEdgeFixture = '12_empty_edge_cases.sql';
 const allowedMissingForeignKeysByFixture: Record<string, number> = {
   '06_alter_table.sql': 1,

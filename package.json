@@ -3,9 +3,13 @@
   "displayName": "Schema Lens",
   "description": "Parse SQL migration files and render interactive ERD diagrams in a side panel",
   "version": "0.1.0",
-  "publisher": "schema-lens",
+  "publisher": "SangeethPromod",
   "engines": {
     "vscode": "^1.80.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sangeethpromod/Schema-Lens-Website.git"
   },
   "categories": [
     "Visualization",
@@ -57,8 +61,7 @@
     "@types/vscode": "^1.80.0",
     "@vscode/vsce": "^2.22.0",
     "jest": "^30.3.0",
-    "ts-jest": "^29.4.9",
-    "vitest": "^4.1.2"
+    "ts-jest": "^29.4.9"
   },
   "dependencies": {
     "node-sql-parser": "^4.12.0",

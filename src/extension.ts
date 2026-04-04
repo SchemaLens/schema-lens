@@ -125,9 +125,4 @@ function renderERD(document: vscode.TextDocument, panel: vscode.WebviewPanel): v
   }
 }
 
-function isDarkTheme(): boolean {
-  const theme = vscode.window.activeColorTheme;
-  return theme.kind === vscode.ColorThemeKind.Dark || theme.kind === vscode.ColorThemeKind.HighContrast;
-}
-
 export function deactivate() {}
