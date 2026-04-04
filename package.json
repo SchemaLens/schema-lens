@@ -2,7 +2,7 @@
   "name": "schema-lens",
   "displayName": "Schema Lens",
   "description": "Parse SQL migration files and render interactive ERD diagrams in a side panel",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "SangeethPromod",
   "engines": {
     "vscode": "^1.80.0"
