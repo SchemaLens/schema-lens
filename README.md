@@ -5,7 +5,7 @@
 <!-- DEMO GIF — replace this comment with your GIF once uploaded to the repo -->
 <!-- ![Schema Lens demo](images/demo.gif) -->
 
-Open your migration file → click **≋ ERD** → live diagram updates as you edit. Vibe-coded in public, AGPLv3 licensed.
+Open your migration file → click **≋ Schema Lens Icon** → live diagram updates as you edit. Vibe-coded in public, AGPLv3 licensed.
 
 [Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=SangeethPromod.schema-lens) | [GitHub](https://github.com/sangeethPromod/schema-lens)
 
