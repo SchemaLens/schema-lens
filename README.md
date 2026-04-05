@@ -9,7 +9,7 @@ Open your migration file → click **≋ Schema Lens Icon** → live diagram upd
 
 [Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=SangeethPromod.schema-lens) | [GitHub](https://github.com/sangeethPromod/schema-lens)
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T41XAD01)
+[![ko-fi](https://storage.ko-fi.com/cdn/kofi_stroke_cup_button.png)](https://ko-fi.com/T6T41XAD01)
 
 ---
 
