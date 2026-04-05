@@ -1,4 +1,4 @@
-﻿# Schema Lens
+# Schema Lens
 
 **Instant ERD diagrams from your SQL, Prisma, Drizzle, and Knex migrations. No database connection required.**
 
@@ -7,7 +7,7 @@
 
 Open your migration file → click **≋ Schema Lens Icon** → live diagram updates as you edit. Vibe-coded in public, AGPLv3 licensed.
 
-[Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=SangeethPromod.schema-lens) | [GitHub](https://github.com/sangeethPromod/schema-lens)
+[Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=SangeethPromod.schema-lens) | [GitHub](https://github.com/SchemaLens/schema-lens)
 
 [![ko-fi](https://storage.ko-fi.com/cdn/kofi_stroke_cup_button.png)](https://ko-fi.com/T6T41XAD01)
 
@@ -129,7 +129,7 @@ This is not production-hardened tooling. It is a dev utility that solves a real 
 ## Contribute
 
 ```bash
-git clone https://github.com/sangeethPromod/schema-lens
+git clone https://github.com/SchemaLens/schema-lens.git
 cd schema-lens
 npm install
 npm test
@@ -137,7 +137,7 @@ npm test
 
 1. Fork → branch → PR to `main`
 2. `npm test` must pass before pushing
-3. Good first issues: [labeled here](https://github.com/sangeethPromod/schema-lens/labels/good%20first%20issue)
+3. Good first issues: [labeled here](https://github.com/SchemaLens/schema-lens/issues/2)
 
 **Wanted contributions:**
 - Parser bug fixes for your ORM / SQL dialect
@@ -148,9 +148,9 @@ npm test
 
 ---
 
-[![AGPL License](https://img.shields.io/github/license/sangeethPromod/schema-lens)](LICENSE)
-[![Issues](https://img.shields.io/github/issues/sangeethPromod/schema-lens)](https://github.com/sangeethPromod/schema-lens/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/sangeethPromod/schema-lens)](https://github.com/sangeethPromod/schema-lens/pulls)
+[![AGPL License](https://img.shields.io/github/license/SchemaLens/schema-lens)](LICENSE)
+[![Issues](https://img.shields.io/github/issues/SchemaLens/schema-lens)](https://github.com/SchemaLens/schema-lens/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/SchemaLens/schema-lens)](https://github.com/SchemaLens/schema-lens/pulls)
 
 Schema Lens is licensed under the [GNU Affero General Public License v3.0](LICENSE).
 Copyright (C) 2026 Sangeeth Promod
