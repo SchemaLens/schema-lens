@@ -2,7 +2,7 @@
   "name": "schema-lens",
   "displayName": "Schema Lens",
   "description": "Parse SQL migration files and render interactive ERD diagrams in a side panel",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "SangeethPromod",
   "engines": {
     "vscode": "^1.80.0"
@@ -19,7 +19,9 @@
     "onCommand:schema-lens.openERD",
     "onCommand:schema-lens.compareWith",
     "onLanguage:sql",
-    "onLanguage:prisma"
+    "onLanguage:prisma",
+    "onLanguage:typescript",
+    "onLanguage:javascript"
   ],
   "icon": "images/icon.png",
   "main": "./out/extension.js",
@@ -41,7 +43,7 @@
     "menus": {
       "editor/title": [
         {
-          "when": "resourceExtname == .sql || resourceFilename =~ /schema\\.prisma/",
+          "when": "resourceExtname == .sql || resourceExtname == .prisma || resourceExtname == .ts || resourceExtname == .js",
           "command": "schema-lens.openERD",
           "group": "navigation"
         }

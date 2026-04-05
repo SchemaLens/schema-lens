@@ -1,3 +1,5 @@
+/// <reference types="node" />
+/// <reference types="jest" />
 import * as fs from 'node:fs';
 import * as path from 'node:path';
 import { parseFile } from '../src/parsers';
