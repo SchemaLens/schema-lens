@@ -120,7 +120,7 @@ Please do not take review feedback personally. The goal is a high-quality, coher
 
 If you have found a security issue, please report it privately:
 
-- Email: *(add your contact email here)*
+- Email: *sangeeth.kainikkara@protonmail.com*
 - Or use GitHub's private vulnerability reporting if enabled for this repository
 
 Please include a description of the vulnerability, steps to reproduce it, and your assessment of its impact. You will receive a response within 72 hours. Please allow reasonable time for a fix to be developed before any public disclosure.
