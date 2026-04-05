@@ -71,10 +71,10 @@ Open any `.sql` / `.prisma` / Drizzle / Knex file → the **≋ ERD** button app
 
 ### Open an ERD
 1. Open a supported schema file
-2. Click **≋ ERD** in the editor title bar, or run **Schema Lens: Open ERD** from the Command Palette (`Ctrl+Shift+P`)
+2. Click **≋ Schema Lens** in the editor title bar, or run **Schema Lens: Open ERD** from the Command Palette (`Ctrl+Shift+P`)
 3. ERD opens in a side panel — zoom with scroll wheel, pan by click-dragging
 
-### Diff Mode
+### Diff Mode (Beta, may run into edge case issues)
 Compare two schema files visually:
 1. Open a schema file
 2. Run **Schema Lens: Compare With…** from the Command Palette
